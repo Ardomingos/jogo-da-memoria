@@ -25,6 +25,7 @@
     position: center;
     border: 2px solid #39813a;
     border-radius: 5px;
+    transition: all 600ms ease;
 }
 
 .front{
@@ -36,6 +37,11 @@
     backface-visibility: hidden;
 }
 
-.card:hover{
+.reveal-card{
     transform: rotateY(180deg);
+}
+
+.disable-card{
+    filter: saturate(0);
+    opacity: 0.5;
 }
